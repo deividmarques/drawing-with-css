@@ -127,3 +127,56 @@ body, html
   -moz-transform: rotate(180deg)
 
 
+
+.boat
+  border-top: 30px solid #0b3148
+  border-left: 30px solid transparent
+  border-right: 30px solid transparent
+  height: 0
+  position: relative
+  width: 150px
+  z-index: 10
+
+  &:before
+    content: ""
+    background: #47718b
+    height: 85px
+    position: absolute
+    margin-left: -1px
+    left: 50%
+    top: -114px
+    width: 3px
+
+  .sail
+
+    &:before,
+    &:after
+      content: ""
+      width: 0
+      height: 0
+      position: absolute
+
+    &:before
+      border-bottom: 55px solid #58c1db
+      border-right: 35px solid transparent
+      top: -88px
+      left: 50px
+
+    &:after
+      border-bottom: 80px solid #58c1db
+      border-left: 55px solid transparent
+      top: -113px
+      left: -11px
+
+
+
+
+
+
+
+
+
+
+
+
+
