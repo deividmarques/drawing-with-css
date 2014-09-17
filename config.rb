@@ -82,4 +82,8 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+
+  # base url for gh-pages
+  set :base_url, "http://deividmarques.github.io/drawing-with-css"
 end
