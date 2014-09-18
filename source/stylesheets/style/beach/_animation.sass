@@ -6,15 +6,32 @@
     +translate(-1800%, -80px)
 
   .shine
-    +animation(scale 30s ease-in-out infinite)
+    +animation(shine 20s ease-in-out infinite)
 
-+keyframes(scale)
+  .sun
+    +animation(sunshine 20s ease-in-out infinite)
+
+
++keyframes(shine)
   0%
-    opacity: .2
+    opacity: 0
   30%
     opacity: 1
   60%
-    opacity: .2
-
-  100%
+    opacity: 0
+  90%
     opacity: 1
+  100%
+    opacity: 0
+
++keyframes(sunshine)
+  0%
+    box-shadow: 0 0 100px 50px #ed9702
+  30%
+    box-shadow: 0 0 140px 90px #ed9702
+  60%
+    box-shadow: 0 0 100px 50px #ed9702
+  90%
+    box-shadow: 0 0 140px 90px #ed9702
+  100%
+    box-shadow: 0 0 100px 50px #ed9702
