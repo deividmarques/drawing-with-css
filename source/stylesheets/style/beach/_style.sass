@@ -10,14 +10,17 @@
 body, html, .container
   height: 100%
 
+#animation
+  border: none
+  cursor: pointer
+  padding: 8px 12px
+  position: absolute
+  z-index: 20
+  left: 0
+  top: 0
+
 .container
   overflow: hidden
-
-.animated
-  position: absolute
-  top: 0
-  left: 0
-  z-index: 20
 
 .area-top
   background: rgb(97,170,188)
@@ -32,10 +35,9 @@ body, html, .container
 
 .area-bottom
   border-top: 8px solid rgb(125,204,225)
-
-
   height: 40%
   position: relative
+  z-index: 4
 
   &:before
     content: ""
@@ -148,14 +150,16 @@ body, html, .container
   -moz-transform: rotate(180deg)
 
 .boat
-  +single-transition(all, 5s)
-  +translate(0, 0)
+  +single-transition(all, 15s)
+  +translate(0, 20px)
+  +scale(1)
   border-top: 30px solid #0b3148
   border-left: 30px solid transparent
   border-right: 30px solid transparent
+  right: -200px
   height: 0
   position: absolute
-  top: 20px
+  top: 20%
   width: 150px
   z-index: 10
 
