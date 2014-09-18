@@ -7,9 +7,17 @@
 *:before
   +box-sizing(border-box)
 
-body, html
+body, html, .container
   height: 100%
 
+.container
+  overflow: hidden
+
+.animated
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 20
 
 .area-top
   background: rgb(97,170,188)
@@ -139,9 +147,9 @@ body, html
   -webkit-transform: rotate(180deg)
   -moz-transform: rotate(180deg)
 
-
-
 .boat
+  +single-transition(all, 5s)
+  +translate(0, 0)
   border-top: 30px solid #0b3148
   border-left: 30px solid transparent
   border-right: 30px solid transparent
